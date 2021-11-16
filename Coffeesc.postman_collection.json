@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "97cd50b0-2418-4541-b4e1-7a5f8f9850e9",
+		"name": "Coffeesc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "apilogin",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "input-content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "output-content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/coffeesc/api/apilogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"coffeesc",
+						"api",
+						"apilogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apilogout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "input-content-type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "output-content-type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTc3NzM4ZTFhMDcyZGVjMDQ5MWU0ZDNjNGQ1OTg1YzIzM2ZmNGVkZGMxM2E3Njc4ZWFhNWViZGYyMGM4ZTJiZjkwMzAwZGQ5OTRlNTNjMWUiLCJpYXQiOjE2MzY4MTU0MzkuNDIxMDk5LCJuYmYiOjE2MzY4MTU0MzkuNDIxMTAzLCJleHAiOjE2NjgzNTE0MzkuNDE0MDg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.njXIEZTu7nPjbOfSTMKcG2nH9bZXoKQ4pVPnoEkOg827MusQ8g9e7Vb7jjfOww4bPAKwm-PSFxyAyYUVXR216GbCLPUo0Ju9pfxUsHTLPNwR7vuakFeOhOcDwWmLMKEeZCEpOrzV9UOrhsSu6xN2Mhf_lAjipEpBFbjme5bsPWoticZuUrgFJekDgDMizA_OCAP9Sy5ps3Hauq3pA5qcVR4yz3jqeGtgpIrwU2adVkg_13eRh5LzQgCvsvHY1ZtDqrXVBxnXRaDFAQO-yGP5KOxLmN1L9jk0mm0DcTAQOxFC0KYE5sEi_Z7Tpo8BnNlLEQX614A3rIZ3akDaKx0m4i3RyTVhO8CxbTDUEwXj7TX7V_wpEAlv71fRWNdJdBMF8S7yixTrr59jE0Nw6_MWsmmj6FpNAY35LDphKaz_AGWyoVgbS0D6MOs1Etws2_V4ehsTmsb54XDxMuaz-VSqguaGvkqEjI6odhkIq2UBati_mi7Pterhe_-D4InRXgzQw79b_WreEVTps7jRxEazvYfNwDokQuLP2BTFvAPkpVsj4avUjxvYFxccnuX9-YdguXTycPh5tuTa6ZruYiqVNz5Vi8HMkXaJUQ8rZY0WGQcMj_pqHG_sYGjbs3w8dBPo5wZZdAYRpR9OtHAWvdUhnAV0a_HTL27dp7z40_Q0bXo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/coffeesc/api/apilogout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"coffeesc",
+						"api",
+						"apilogout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducts",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODZjZTkyNjI2ZWMwNDYxNTIzYWVjOWFiZDI1YTFhMDcxODQwODk0MTUxYjg1NDU1MWMwOTY3MjdjMThmZmNlMTZkNjRmNjBjYjk3NDZlOTEiLCJpYXQiOjE2MzY4MTIwNjkuNjIwOTA0LCJuYmYiOjE2MzY4MTIwNjkuNjIwOTA5LCJleHAiOjE2NjgzNDgwNjkuNTk4ODQ2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.SE52l_M2t7LowSqXdcoWWsF-E2mUMPNiLl9eifzJAerKVu50B7gGp_sNBgDiFx0oOjMZhSrG9jAXZFuwTEV1f24sK-ACW14ti0HnzZNcORbWp9zZFTPewLr5fde0uJ-W4JqXel6yRuAKXGjeGei2D1qn_IRtt9xTz5lWU5DkxE8tOpFqR-oFgC-cf4UDVhi3luzN6PyyOkJIdsCuHsEi0r_i6C1hr0xNP-QuvqzHRSVUmkmK5dFDPHy7W22objcl59toXtSoi0AAjNpVB-YUS2Pj8vn5Nq977H6AOjiCR3YsYRD_dxp7jcAmhsCvwwZ5eUUN7_SIRRDxYvf0EesvzrfsnTHKw60ZkcCDOc2zxN8H-Q5BoD_3jN3HQMj7nTCLhLWysYHeDujpFrY_MBkfy0nhZnFYintZvCkfzaNeq2jBl3CKYotrhexurbZHzyY75rmb8Yq_hOPZaHBzeWOvI1YLOivPpmmZNDfcf5aod3ZGMe0edTRwIedaDA8dRrtF2lTMVFZdwnTBQv-AuG3PxzRn7vOfXzveaKmBYJMVJYrLU_yv0fsVNJ6ZalLRYMm0ktK9I8U-vpaR2LjGe-epgC5SCQyLOW07LJe1fpjn9wduixlpFZF78zRUvvbqM94FNOMEL1QF1KNiEQzQlNqVHtOA3WBBIKkm0dWS12kJncw",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/coffeesc/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"coffeesc",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showProducts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTc3NzM4ZTFhMDcyZGVjMDQ5MWU0ZDNjNGQ1OTg1YzIzM2ZmNGVkZGMxM2E3Njc4ZWFhNWViZGYyMGM4ZTJiZjkwMzAwZGQ5OTRlNTNjMWUiLCJpYXQiOjE2MzY4MTU0MzkuNDIxMDk5LCJuYmYiOjE2MzY4MTU0MzkuNDIxMTAzLCJleHAiOjE2NjgzNTE0MzkuNDE0MDg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.njXIEZTu7nPjbOfSTMKcG2nH9bZXoKQ4pVPnoEkOg827MusQ8g9e7Vb7jjfOww4bPAKwm-PSFxyAyYUVXR216GbCLPUo0Ju9pfxUsHTLPNwR7vuakFeOhOcDwWmLMKEeZCEpOrzV9UOrhsSu6xN2Mhf_lAjipEpBFbjme5bsPWoticZuUrgFJekDgDMizA_OCAP9Sy5ps3Hauq3pA5qcVR4yz3jqeGtgpIrwU2adVkg_13eRh5LzQgCvsvHY1ZtDqrXVBxnXRaDFAQO-yGP5KOxLmN1L9jk0mm0DcTAQOxFC0KYE5sEi_Z7Tpo8BnNlLEQX614A3rIZ3akDaKx0m4i3RyTVhO8CxbTDUEwXj7TX7V_wpEAlv71fRWNdJdBMF8S7yixTrr59jE0Nw6_MWsmmj6FpNAY35LDphKaz_AGWyoVgbS0D6MOs1Etws2_V4ehsTmsb54XDxMuaz-VSqguaGvkqEjI6odhkIq2UBati_mi7Pterhe_-D4InRXgzQw79b_WreEVTps7jRxEazvYfNwDokQuLP2BTFvAPkpVsj4avUjxvYFxccnuX9-YdguXTycPh5tuTa6ZruYiqVNz5Vi8HMkXaJUQ8rZY0WGQcMj_pqHG_sYGjbs3w8dBPo5wZZdAYRpR9OtHAWvdUhnAV0a_HTL27dp7z40_Q0bXo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/coffeesc/api/products/71",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"coffeesc",
+						"api",
+						"products",
+						"71"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
