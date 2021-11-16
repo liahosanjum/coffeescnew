@@ -1,0 +1,19 @@
+.header{
+    float:left;
+    height:200px;
+    width:100%;
+    border:1px solid;
+}
+.header-menu {
+    float:left;
+    width:100%;
+}
+ul.header-menu li {
+    list-style-type: none;
+    width: auto;
+    float: left;
+    padding: 20px;
+}
+ul.header-menu li a {
+    text-decoration:none;
+}
